@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deevansh Katare | Quality Analyst</title>
+<meta name="description" content="Deevansh Katare is a Quality Analyst at iEnergizer (Urban Company process) focused on quality audits, DSAT and AHT analysis, SQL and process improvement.">
+<meta name="theme-color" content="#0A1B3D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>:root{
+  --navy-950:#071430;
+  --navy-900:#0A1B3D;
+  --navy-700:#16306A;
+  --navy-500:#2F55B5;
+  --sky:#9DBBFF;
+  --paper:#F6F8FC;
+  --tint:#EAEFF8;
+  --rule:#CFD8EA;
+  --ink:#0E1B36;
+  --muted:#4A5878;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --text:"IBM Plex Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;font:400 1.0625rem/1.65 var(--text);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.1;margin:0}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+a{color:var(--navy-500);text-underline-offset:3px}
+a:hover{color:var(--navy-700)}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:2px}
+
+.skip{position:absolute;left:-999px;top:8px;background:#fff;color:var(--navy-900);padding:8px 14px;z-index:20}
+.skip:focus{left:8px}
+
+/* header */
+.top{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px clamp(20px,5vw,64px);background:var(--navy-950);border-bottom:1px solid rgba(157,187,255,.18)}
+.brand{font:800 1.25rem var(--display);color:#fff;text-decoration:none;letter-spacing:.02em}
+.top nav{display:flex;gap:clamp(12px,2.4vw,28px)}
+.top nav a{color:#C9D6F5;text-decoration:none;font-weight:500;font-size:.95rem}
+.top nav a:hover{color:#fff}
+
+/* hero */
+.hero{background:var(--navy-900);color:#fff;display:grid;grid-template-columns:1.25fr .85fr;gap:clamp(32px,6vw,88px);align-items:center;padding:clamp(56px,9vw,120px) clamp(20px,5vw,64px)}
+.role{color:var(--sky);font-weight:600;font-size:1rem;margin-bottom:18px}
+.hero h1{font-weight:800;font-size:clamp(3rem,9vw,7rem);letter-spacing:-.035em;line-height:.95}
+.lead{margin-top:28px;max-width:34em;font-size:1.2rem;color:#D5DFF7}
+.lead a{color:#fff;text-decoration-color:var(--sky)}
+.lead a:hover{color:var(--sky)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.btn{display:inline-block;padding:13px 22px;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid transparent;transition:background .15s,color .15s,border-color .15s}
+.btn.primary{background:#fff;color:var(--navy-900)}
+.btn.primary:hover{background:var(--sky);color:var(--navy-950)}
+.btn.ghost{border-color:rgba(157,187,255,.55);color:#fff}
+.btn.ghost:hover{border-color:#fff;color:#fff;background:rgba(255,255,255,.08)}
+
+/* audit sheet: the one memorable element */
+.audit{background:var(--paper);color:var(--ink);border-radius:6px;box-shadow:12px 12px 0 var(--navy-700);padding:0 0 18px;transform:rotate(1.2deg);max-width:420px;justify-self:end;width:100%}
+.audit-head{display:flex;justify-content:space-between;gap:12px;background:var(--navy-700);color:#fff;padding:12px 18px;border-radius:6px 6px 0 0;font:600 .9rem var(--text)}
+.audit ul{padding:8px 18px 0}
+.audit li{display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px dashed var(--rule);font-weight:500}
+.audit li:last-child{border-bottom:0}
+.box{position:relative;flex:none;width:24px;height:24px;border:2px solid var(--navy-700);border-radius:4px;background:#fff}
+.box::after{content:"";position:absolute;left:6px;top:1px;width:7px;height:13px;border:solid #fff;border-width:0 3px 3px 0;transform:rotate(45deg) scale(0);transition:none}
+.audit li{--d:0s}
+.audit li .box{animation:fill .01s linear var(--d) forwards}
+.audit li .box::after{animation:tick .25s ease-out var(--d) forwards}
+@keyframes fill{to{background:var(--navy-700)}}
+@keyframes tick{to{transform:rotate(45deg) scale(1)}}
+.audit-foot{padding:14px 18px 0;color:var(--muted);font-size:.9rem;border-top:2px solid var(--navy-900);margin:6px 18px 0;padding-left:0}
+
+/* sections */
+.block{padding:clamp(56px,8vw,104px) clamp(20px,5vw,64px)}
+.block.tint{background:var(--tint)}
+.block>*{max-width:1120px;margin-left:auto;margin-right:auto}
+.block h2{font-weight:800;font-size:clamp(2rem,4.5vw,3.25rem);letter-spacing:-.02em;color:var(--navy-900);margin-bottom:40px;padding-bottom:14px;border-bottom:3px solid var(--navy-900)}
+.about-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,44px)}
+.about-grid p{max-width:34em}
+
+.job header{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px 24px;margin-bottom:32px}
+.job h3{font-size:clamp(1.4rem,2.6vw,1.9rem);color:var(--navy-900)}
+.job h3 a{color:inherit}
+.sub{color:var(--muted);font-style:italic;margin-top:4px}
+.dates{color:var(--muted);font-weight:500;font-size:.95rem}
+.job-cols{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,2.4vw,36px)}
+.job-cols h4{font-size:1.15rem;color:var(--navy-700);margin-bottom:12px;padding-left:12px;border-left:4px solid var(--navy-500)}
+.job-cols li{padding:8px 0;border-bottom:1px solid var(--rule);font-size:1rem;line-height:1.5}
+.job-cols li:last-child{border-bottom:0}
+
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:32px clamp(24px,4vw,64px)}
+.skill-group.wide{grid-column:1/-1}
+.skill-group h3{font-size:1.2rem;color:var(--navy-700);margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips li{background:#fff;border:1.5px solid var(--navy-700);color:var(--navy-900);padding:5px 13px;border-radius:99px;font-size:.95rem;font-weight:500}
+.tech{margin:0;display:grid;gap:10px}
+.tech div{display:grid;grid-template-columns:170px 1fr;gap:16px;padding-bottom:10px;border-bottom:1px solid var(--rule)}
+.tech dt{font-weight:600;color:var(--navy-900)}
+.tech dd{margin:0}
+
+.projects{display:grid;gap:0}
+.projects li{padding:26px 0;border-bottom:1px solid var(--rule)}
+.projects li:first-child{padding-top:0}
+.projects li:last-child{border-bottom:0;padding-bottom:0}
+.p-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px 20px;margin-bottom:8px}
+.p-head h3{font-size:1.4rem;color:var(--navy-900)}
+.projects p{max-width:46em}
+.stack{margin-top:10px!important;color:var(--navy-500);font-weight:600;font-size:.95rem}
+
+.edu li{display:grid;grid-template-columns:140px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--rule)}
+.yrs{font-weight:600;color:var(--navy-700)}
+
+/* contact */
+.contact{background:var(--navy-900);color:#fff;padding:clamp(56px,8vw,104px) clamp(20px,5vw,64px)}
+.contact-in{max-width:1120px;margin:0 auto}
+.contact h2{font-weight:800;font-size:clamp(2.4rem,6vw,4.5rem);letter-spacing:-.03em;margin-bottom:16px}
+.contact p{color:#D5DFF7;max-width:32em}
+.links{display:flex;flex-wrap:wrap;gap:12px 28px;margin:32px 0}
+.links a{color:#fff;font-weight:600;font-size:1.1rem;text-decoration-color:var(--sky)}
+.links a:hover{color:var(--sky)}
+.loc{color:var(--sky)!important}
+
+@media (max-width:980px){
+  .job-cols{grid-template-columns:repeat(2,1fr)}
+  .about-grid{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr}
+  .audit{justify-self:start;transform:none;max-width:none;box-shadow:8px 8px 0 var(--navy-700)}
+  .top nav a:nth-child(n+4){display:none}
+  .job-cols,.skills{grid-template-columns:1fr}
+  .tech div,.edu li{grid-template-columns:1fr;gap:2px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .audit li .box,.audit li .box::after{animation:none}
+  .box{background:var(--navy-700)}
+  .box::after{transform:rotate(45deg) scale(1)}
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <a class="brand" href="#top" aria-label="Deevansh Katare, home">DK</a>
+  <nav aria-label="Main">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<section class="hero" id="top">
+  <div class="hero-text">
+    <p class="role">Quality Analyst | Process Improvement | Data &amp; Operations</p>
+    <h1>Deevansh Katare</h1>
+    <p class="lead">I audit customer interactions, find why customers are unhappy, and turn the patterns into process fixes. Currently at <a href="https://www.ienergizer.com" target="_blank" rel="noopener">iEnergizer</a>, on the <a href="https://www.urbancompany.com" target="_blank" rel="noopener">Urban Company</a> process.</p>
+    <div class="actions">
+      <a class="btn primary" href="Deevansh_Katare_Resume.pdf" download>Download resume</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
+  </div>
+
+  <aside class="audit" aria-label="What a quality audit checks">
+    <div class="audit-head">
+      <span>Audit sheet</span>
+      <span>Urban Company process</span>
+    </div>
+    <ul>
+      <li style="--d:.5s"><span class="box"></span>Compliance</li>
+      <li style="--d:.9s"><span class="box"></span>Communication</li>
+      <li style="--d:1.3s"><span class="box"></span>Service gaps</li>
+      <li style="--d:1.7s"><span class="box"></span>DSAT drivers</li>
+      <li style="--d:2.1s"><span class="box"></span>Handling time (AHT)</li>
+    </ul>
+    <p class="audit-foot">Reviewed by Deevansh</p>
+  </aside>
+</section>
+
+<section class="block" id="about">
+  <h2>About</h2>
+  <div class="about-grid">
+    <p>I'm a B.Tech Computer Science graduate who works as a Quality Analyst at iEnergizer, supporting the Urban Company process since January 2025.</p>
+    <p>My work covers customer experience audits, DSAT and AHT analysis, quality monitoring, Business Query identification and root-cause analysis. I use MS Excel, Google Sheets and SQL to check the data, and my background in Java, React and MySQL helps me think about processes like systems.</p>
+    <p>I look for operational gaps, work out what causes repeat errors, and recommend practical fixes. I also bring team management and leadership skills to the work.</p>
+  </div>
+</section>
+
+<section class="block tint" id="experience">
+  <h2>Experience</h2>
+  <article class="job">
+    <header>
+      <div>
+        <h3>Quality Analyst, <a href="https://www.ienergizer.com" target="_blank" rel="noopener">iEnergizer</a></h3>
+        <p class="sub"><a href="https://www.urbancompany.com" target="_blank" rel="noopener">Urban Company</a> process</p>
+      </div>
+      <p class="dates">January 2025 – Present</p>
+    </header>
+    <div class="job-cols">
+      <div>
+        <h4>Audit</h4>
+        <ul>
+          <li>Audit customer interactions to find compliance, communication and service gaps.</li>
+          <li>Run DSAT audits to find recurring causes of customer dissatisfaction.</li>
+          <li>Identify Business Queries (BQ) and recurring process issues.</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Analyze</h4>
+        <ul>
+          <li>Analyze AHT to find handling-time inefficiencies while keeping quality standards.</li>
+          <li>Use advanced MS Excel to organize, validate and interpret quality data.</li>
+          <li>Use SQL to extract, validate and analyze operational data.</li>
+          <li>Use Google Sheets to track audits, share reports and collaborate with teams.</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Improve</h4>
+        <ul>
+          <li>Investigate root causes of process errors and share findings with stakeholders.</li>
+          <li>Recommend practical fixes that reduce repeat errors and improve efficiency.</li>
+          <li>Work with operations and support teams on improvements that help business growth.</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Lead</h4>
+        <ul>
+          <li>Apply team management skills to coordinate daily quality tasks and help the team meet targets.</li>
+          <li>Show leadership by guiding the team on quality standards and driving improvement work.</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section class="block" id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill-group">
+      <h3>Quality</h3>
+      <ul class="chips"><li>Quality Auditing</li><li>Customer Experience</li><li>DSAT Analysis</li><li>AHT Analysis</li><li>Quality Monitoring</li></ul>
+    </div>
+    <div class="skill-group">
+      <h3>Process</h3>
+      <ul class="chips"><li>Root Cause Analysis</li><li>Process Improvement</li><li>Error Identification</li><li>BQ Identification</li><li>Process Excellence</li></ul>
+    </div>
+    <div class="skill-group">
+      <h3>Data</h3>
+      <ul class="chips"><li>MS Excel</li><li>Google Sheets</li><li>SQL</li><li>Data Validation</li><li>Trend Analysis</li><li>Operational Reporting</li></ul>
+    </div>
+    <div class="skill-group">
+      <h3>Leadership</h3>
+      <ul class="chips"><li>Team Management</li><li>Leadership</li></ul>
+    </div>
+    <div class="skill-group wide">
+      <h3>Technical</h3>
+      <dl class="tech">
+        <div><dt>Programming &amp; Web</dt><dd>HTML, CSS, JavaScript, Core Java, Advanced Java, React</dd></div>
+        <div><dt>Database</dt><dd>SQL, MySQL</dd></div>
+        <div><dt>Backend</dt><dd>Servlet, Hibernate, Spring Boot, Tomcat</dd></div>
+        <div><dt>Tools</dt><dd>Microsoft Excel, Google Sheets, GitHub, Eclipse, VS Code, MySQL Workbench, Spring Tool Suite 4, Postman, Canva</dd></div>
+      </dl>
+    </div>
+    <div class="skill-group wide">
+      <h3>Soft skills</h3>
+      <ul class="chips"><li>Analytical Thinking</li><li>Problem Solving</li><li>Communication</li><li>Attention to Detail</li><li>Team Collaboration</li><li>Team Management</li><li>Leadership</li><li>Adaptability</li><li>Creative Thinking</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="block tint" id="projects">
+  <h2>Projects</h2>
+  <ul class="projects">
+    <li>
+      <div class="p-head"><h3>Front Desk: Hotel Management System</h3><p class="dates">July 2024 – August 2024</p></div>
+      <p>A full-stack hotel management application for room booking and customer management.</p>
+      <p class="stack">HTML, CSS, JavaScript, Core Java, Hibernate, Servlet, MySQL, Tomcat 10</p>
+    </li>
+    <li>
+      <div class="p-head"><h3>Zerodha: Stock Trading Website</h3><p class="dates">August 2024 – September 2024</p></div>
+      <p>A dummy frontend inspired by the Zerodha website, built to practice web development and UI design.</p>
+      <p class="stack">HTML, CSS</p>
+    </li>
+    <li>
+      <div class="p-head"><h3>JST Ticket Booking</h3><p class="dates">Spring Boot</p></div>
+      <p>The backend for an IRCTC-like ticket booking application, built with Spring Boot to apply Java and backend concepts.</p>
+      <p class="stack">Java, Spring Boot</p>
+    </li>
+  </ul>
+</section>
+
+<section class="block" id="education">
+  <h2>Education</h2>
+  <ul class="edu">
+    <li><span class="yrs">2019 – 2023</span><span>Bachelor of Technology, Computer Science, Ganeshi Lal Agrawal (GLA) University, Mathura</span></li>
+    <li><span class="yrs">2023 – 2024</span><span>Full Stack Development Course, QSpiders &amp; JSpiders, Noida</span></li>
+    <li><span class="yrs">2017 – 2019</span><span>Intermediate, Christ the King College</span></li>
+    <li><span class="yrs">2017</span><span>High School, Christ the King College</span></li>
+  </ul>
+</section>
+
+</main>
+
+<footer class="contact" id="contact">
+  <div class="contact-in">
+    <h2>Let's talk</h2>
+    <p>Open to quality, process improvement and data roles. Email is the fastest way to reach me.</p>
+    <ul class="links">
+      <li><a href="mailto:deevansh0101@gmail.com">deevansh0101@gmail.com</a></li>
+      <li><a href="tel:+919305725765">9305725765</a></li>
+      <li><a href="https://www.linkedin.com/in/deevansh-katare-497b3723a" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/Deevansh01" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="Deevansh_Katare_Resume.pdf" download>Resume (PDF)</a></li>
+    </ul>
+    <p class="loc">Noida, Uttar Pradesh</p>
+  </div>
+</footer>
+
+</body>
+</html>
